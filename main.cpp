@@ -1,6 +1,6 @@
-#include "classroom.h"
 #include "student.h"
 #include "teacher.h"
+#include "person.h"
 
 #include <iostream>
 
@@ -8,39 +8,33 @@ using namespace std;
 
 int main()
 {
+    Person *objectPerson=new Person;
+    objectPerson->sayStatus();
+    Student *objectStudent = new Student;
+    objectStudent->setName("Teppo Opiskelija");
+    objectStudent->setBirthYear(2001);
+    objectStudent->setGroupName("tvt23spl");
+    cout<<"Opiskelijan tiedot"<<endl;
+    objectStudent->sayStatus();
+    cout<<objectStudent->getName()<<endl;
+    cout<<objectStudent->getBirthYear()<<endl;
+    cout<<objectStudent->getGroupName()<<endl;
+    cout<<"*****************************\n";
 
-    ClassRoom *objectClassroom = new ClassRoom;
-    objectClassroom->setClassroomName("5b301");
+    Teacher *objectTeacher = new Teacher;
+    objectTeacher->setName("Liisa Opettaja");
+    objectTeacher->setBirthYear(1978);
+    objectTeacher->setDepartment("Tietotekniikka");
+    cout<<"Opettajan tiedot"<<endl;
+    objectTeacher->sayStatus();
+    cout<<objectTeacher->getName()<<endl;
+    cout<<objectTeacher->getBirthYear()<<endl;
+    cout<<objectTeacher->getDepartment()<<endl;
+    cout<<"*****************************\n";
 
-    objectClassroom->objStudent1->setName("Teppo Testi");
-    objectClassroom->objStudent1->setBirthYear(1999);
-    objectClassroom->objStudent1->setGroupName("tvt23spl");
-
-    objectClassroom->objStudent2->setName("Liisa Joki");
-    objectClassroom->objStudent2->setBirthYear(1998);
-    objectClassroom->objStudent2->setGroupName("tvt23spo");
-
-    objectClassroom->objTeacher->setName("Mauno Opettaja");
-    objectClassroom->objTeacher->setBirthYear(1982);
-    objectClassroom->objTeacher->setDepartment("Tietotekniikka");
-
-    cout<<"Luokkahuoneen "<<objectClassroom->getClassroomName()<<" kokoonpano"<<endl;
-
-    cout<<objectClassroom->objStudent1->getName()<<endl;
-    cout<<objectClassroom->objStudent1->getBirthYear()<<endl;
-    cout<<objectClassroom->objStudent1->getGroupName()<<endl;
-    cout<<"**********************************\n";
-
-    cout<<objectClassroom->objStudent2->getName()<<endl;
-    cout<<objectClassroom->objStudent2->getBirthYear()<<endl;
-    cout<<objectClassroom->objStudent2->getGroupName()<<endl;
-    cout<<"**********************************\n";
-
-    cout<<objectClassroom->objTeacher->getName()<<endl;
-    cout<<objectClassroom->objTeacher->getBirthYear()<<endl;
-    cout<<objectClassroom->objTeacher->getDepartment()<<endl;
-
-    delete objectClassroom;
-    objectClassroom=nullptr;
+    delete objectStudent;
+    objectStudent=nullptr;
+    delete objectTeacher;
+    objectTeacher=nullptr;
     return 0;
 }

@@ -13,6 +13,7 @@ public:
 
     int getBirthYear() const;
     void setBirthYear(int newBirthYear);
+    void sayStatus();
 
 private:
     string name;

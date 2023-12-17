@@ -24,3 +24,8 @@ void Person::setBirthYear(int newBirthYear)
 {
     birthYear = newBirthYear;
 }
+
+void Person::sayStatus()
+{
+    cout<<"Person\n ";
+}

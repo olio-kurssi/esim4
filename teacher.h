@@ -13,6 +13,7 @@ public:
     Teacher();
     string getDepartment() const;
     void setDepartment(const string &newDepartment);
+    void sayStatus();
 
 private:
     string department;

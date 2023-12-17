@@ -14,3 +14,8 @@ void Teacher::setDepartment(const string &newDepartment)
 {
     department = newDepartment;
 }
+
+void Teacher::sayStatus()
+{
+    cout<<"Opettaja: ";
+}

@@ -14,6 +14,7 @@ public:
     Student();
     string getGroupName() const;
     void setGroupName(const string &newGroupName);
+    void sayStatus();
 
 private:
     string groupName;

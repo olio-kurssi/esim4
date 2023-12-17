@@ -14,3 +14,9 @@ void Student::setGroupName(const string &newGroupName)
 {
     groupName = newGroupName;
 }
+
+void Student::sayStatus()
+{
+    cout<<"Opiskelija: ";
+}
+
