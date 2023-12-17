@@ -1,4 +1,4 @@
-# esim4 Koostaminen
+# esim4 Virtuaalimetodi
 
 Tässä esimerkissä on luokat Person, Student ja Teacher, kuten esimerkissä 3.
 
