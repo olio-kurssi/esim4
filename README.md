@@ -2,8 +2,7 @@
 
 Tässä esimerkissä on luokat Person, Student ja Teacher, kuten esimerkissä 3.
 
-Tässä on lisäksi luokka **ClassRoom**, joka **koostaa** eli sisältää luokkien Student ja Person olioita.
-Luokka ClassRoom sisältää kaksi Student luokan oliota ja yhden Teacher luokan olion.
+Tässä on Person luokkaan lisätty **virtuaalimetodi** sayStatus(), joka on ylikirjoitettu luokissa Student ja Teacher.
 
-Kannattaa tutkia erityisesti ClassRoom luokan koodia ja main.cpp:tä. 
+main.cpp:ssä luodaan myös Person luokan olio.
 
