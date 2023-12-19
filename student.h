@@ -14,7 +14,7 @@ public:
     Student();
     string getGroupName() const;
     void setGroupName(const string &newGroupName);
-    void sayStatus();
+    virtual void sayStatus() override;
 
 private:
     string groupName;

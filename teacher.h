@@ -13,7 +13,7 @@ public:
     Teacher();
     string getDepartment() const;
     void setDepartment(const string &newDepartment);
-    void sayStatus();
+    virtual void sayStatus() override;
 
 private:
     string department;
