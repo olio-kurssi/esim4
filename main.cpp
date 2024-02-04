@@ -10,6 +10,7 @@ int main()
 {
     Person *objectPerson=new Person;
     objectPerson->sayStatus();
+
     Student *objectStudent = new Student;
     objectStudent->setName("Teppo Opiskelija");
     objectStudent->setBirthYear(2001);
@@ -36,5 +37,6 @@ int main()
     objectStudent=nullptr;
     delete objectTeacher;
     objectTeacher=nullptr;
+
     return 0;
 }
