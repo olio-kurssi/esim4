@@ -10,6 +10,8 @@ int main()
 {
     Person *objectPerson=new Person;
     objectPerson->sayStatus();
+    delete objectPerson;
+    objectPerson=nullptr;
 
     Student *objectStudent = new Student;
     objectStudent->setName("Teppo Opiskelija");

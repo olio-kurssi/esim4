@@ -5,6 +5,11 @@ Person::Person()
 
 }
 
+Person::~Person()
+{
+    cout<<"Person object deleted"<<endl;
+}
+
 string Person::getName() const
 {
     return name;
@@ -27,5 +32,5 @@ void Person::setBirthYear(int newBirthYear)
 
 void Person::sayStatus()
 {
-    cout<<"Person\n ";
+    cout<<"Person Info"<<endl;
 }
